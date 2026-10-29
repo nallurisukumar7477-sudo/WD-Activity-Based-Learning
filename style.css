@@ -1,0 +1,254 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff8f0;
+    color: #493126;
+}
+
+header {
+    background-color: #59382b;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    margin-bottom: 5px;
+    font-size: 35px;
+}
+
+nav {
+    background-color: #f1d6c8;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #493126;
+    margin: 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #b65c50;
+}
+
+.hero {
+    text-align: center;
+    padding: 65px 20px;
+    background-color: #f8e8dc;
+}
+
+.hero h2 {
+    font-size: 32px;
+}
+
+.hero p {
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+.button {
+    display: inline-block;
+    background-color: #59382b;
+    color: white;
+    text-decoration: none;
+    padding: 12px 22px;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #a65d4c;
+}
+
+section {
+    padding: 35px 20px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 28px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.card {
+    background-color: white;
+    width: 260px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px #00000015;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.card h3 {
+    color: #754632;
+}
+
+.card h4 {
+    color: #b65c50;
+}
+
+.about {
+    background-color: #f1e1d4;
+}
+
+.about p {
+    max-width: 650px;
+    margin: auto;
+    line-height: 1.8;
+}
+
+footer {
+    background-color: #59382b;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+@media (max-width: 600px) {
+    nav a {
+        display: inline-block;
+        margin: 8px;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 85%;
+    }
+}
+
+/* Background Images */
+body {
+    background-image: url("https://www.transparenttextures.com/patterns/cream-paper.png");
+    background-color: #fff8f0;
+}
+
+.hero {
+    background-image:
+        linear-gradient(90deg, rgba(40, 22, 15, 0.82), rgba(40, 22, 15, 0.15)),
+        url("https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=1600&q=85");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: left;
+    padding: 100px 10%;
+    min-height: 250px;
+}
+
+.hero h2 {
+    font-size: 38px;
+    max-width: 450px;
+}
+
+.hero p {
+    max-width: 420px;
+    line-height: 1.8;
+}
+
+#cakes {
+    padding: 50px 8%;
+}
+
+#cakes > h2 {
+    text-align: left;
+    margin-left: 10px;
+}
+
+.container {
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 25px;
+}
+
+.card {
+    flex: 1;
+    max-width: 320px;
+    width: auto;
+    text-align: left;
+    overflow: hidden;
+}
+
+.card img {
+    height: 210px;
+}
+
+.about {
+    background:
+        linear-gradient(rgba(255, 248, 240, 0.91),
+                        rgba(255, 248, 240, 0.91)),
+        url("https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=1400&q=80");
+    background-size: cover;
+    background-position: center;
+    text-align: left;
+    padding: 55px 10%;
+}
+
+.about h2 {
+    max-width: 600px;
+}
+
+.about p {
+    margin: 0;
+    max-width: 650px;
+    line-height: 1.9;
+}
+
+#contact {
+    text-align: left;
+    padding: 40px 10%;
+}
+
+@media (max-width: 600px) {
+    .hero {
+        padding: 65px 7%;
+        background-position: 60% center;
+    }
+
+    .hero h2 {
+        font-size: 30px;
+    }
+
+    #cakes > h2 {
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .container {
+        align-items: center;
+    }
+
+    .card {
+        flex: initial;
+        width: 85%;
+        max-width: 340px;
+    }
+
+    .about, #contact {
+        padding: 35px 7%;
+    }
+}
