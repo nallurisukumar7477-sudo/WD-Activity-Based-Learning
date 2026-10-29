@@ -1,0 +1,320 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pulse Analytics Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="dashboard">
+
+        <aside class="sidebar">
+            <h2 class="logo">pulse<span>.</span></h2>
+            <p class="menu-title">WORKSPACE</p>
+
+            <a href="#" class="active">▦ Overview</a>
+            <a href="#revenue">▤ Analytics</a>
+            <a href="#sales">◈ Sales Reports</a>
+            <a href="#customers">♙ Customers</a>
+            <a href="#activity">◷ Activities</a>
+
+            <div class="sidebar-bottom">
+                <div class="profile-icon">PA</div>
+                <div>
+                    <b>Pulse Admin</b>
+                    <small>Administrator</small>
+                </div>
+            </div>
+        </aside>
+
+        <main class="main-content">
+
+            <div class="topbar">
+                <div>
+                    <p class="small-text">MONDAY, OCTOBER 26</p>
+                    <h1>Business Overview</h1>
+                </div>
+                <div class="top-actions">
+                    <input type="search" placeholder="Search data...">
+                    <button class="export-btn"
+                        onclick="window.print()">Export Report</button>
+                </div>
+            </div>
+
+            <div class="welcome">
+                <div>
+                    <h2>Your business at a glance.</h2>
+                    <p>Here is what's happening with your store today.</p>
+                </div>
+                <span class="live-status">● LIVE OVERVIEW</span>
+            </div>
+
+            <section class="metrics">
+
+                <div class="metric-card">
+                    <p>Total Revenue</p>
+                    <h2>₹8,42,500</h2>
+                    <span class="positive">↑ 12.8%</span>
+                    <small> compared to last month</small>
+                    <div class="mini-bars">
+                        <i style="height:30%"></i>
+                        <i style="height:48%"></i>
+                        <i style="height:35%"></i>
+                        <i style="height:65%"></i>
+                        <i style="height:48%"></i>
+                        <i style="height:80%"></i>
+                        <i style="height:100%"></i>
+                    </div>
+                </div>
+
+                <div class="metric-card">
+                    <p>Total Users</p>
+                    <h2>24,680</h2>
+                    <span class="positive">↑ 8.4%</span>
+                    <small> compared to last month</small>
+                    <div class="mini-bars purple-bars">
+                        <i style="height:60%"></i>
+                        <i style="height:35%"></i>
+                        <i style="height:70%"></i>
+                        <i style="height:50%"></i>
+                        <i style="height:85%"></i>
+                        <i style="height:65%"></i>
+                        <i style="height:100%"></i>
+                    </div>
+                </div>
+
+                <div class="metric-card">
+                    <p>Total Sales</p>
+                    <h2>1,842</h2>
+                    <span class="positive">↑ 15.2%</span>
+                    <small> compared to last month</small>
+                    <div class="mini-bars orange-bars">
+                        <i style="height:40%"></i>
+                        <i style="height:55%"></i>
+                        <i style="height:30%"></i>
+                        <i style="height:75%"></i>
+                        <i style="height:60%"></i>
+                        <i style="height:80%"></i>
+                        <i style="height:100%"></i>
+                    </div>
+                </div>
+
+                <div class="metric-card">
+                    <p>Conversion Rate</p>
+                    <h2>6.84%</h2>
+                    <span class="positive">↑ 2.1%</span>
+                    <small> compared to last month</small>
+                    <div class="mini-bars green-bars">
+                        <i style="height:35%"></i>
+                        <i style="height:60%"></i>
+                        <i style="height:45%"></i>
+                        <i style="height:70%"></i>
+                        <i style="height:55%"></i>
+                        <i style="height:80%"></i>
+                        <i style="height:100%"></i>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="analytics-grid" id="revenue">
+
+                <div class="panel revenue-panel">
+                    <div class="panel-heading">
+                        <div>
+                            <h3>Revenue Analytics</h3>
+                            <p>Monthly income performance</p>
+                        </div>
+                        <select>
+                            <option>Last 7 months</option>
+                            <option>Last 30 days</option>
+                            <option>This year</option>
+                        </select>
+                    </div>
+
+                    <div class="chart">
+                        <div class="y-labels">
+                            <span>₹10L</span>
+                            <span>₹7.5L</span>
+                            <span>₹5L</span>
+                            <span>₹2.5L</span>
+                            <span>₹0</span>
+                        </div>
+
+                        <div class="chart-area">
+                            <div class="grid-lines">
+                                <i></i><i></i><i></i><i></i><i></i>
+                            </div>
+
+                            <svg viewBox="0 0 600 220"
+                                preserveAspectRatio="none">
+                                <defs>
+                                    <linearGradient id="fillColor"
+                                        x1="0" y1="0" x2="0" y2="1">
+                                        <stop offset="0%"
+                                            stop-color="#7667e8"
+                                            stop-opacity="0.3"/>
+                                        <stop offset="100%"
+                                            stop-color="#7667e8"
+                                            stop-opacity="0"/>
+                                    </linearGradient>
+                                </defs>
+
+                                <path d="M0,180 L90,140 L180,155
+                                    L270,90 L360,115 L450,50 L540,75
+                                    L600,20 L600,220 L0,220 Z"
+                                    fill="url(#fillColor)"/>
+
+                                <polyline
+                                    points="0,180 90,140 180,155
+                                    270,90 360,115 450,50 540,75 600,20"
+                                    fill="none" stroke="#7667e8"
+                                    stroke-width="3"
+                                    stroke-linejoin="round"
+                                    stroke-linecap="round"/>
+                            </svg>
+
+                            <div class="x-labels">
+                                <span>Apr</span><span>May</span>
+                                <span>Jun</span><span>Jul</span>
+                                <span>Aug</span><span>Sep</span>
+                                <span>Oct</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel sales-panel" id="sales">
+                    <div class="panel-heading">
+                        <div>
+                            <h3>Sales Breakdown</h3>
+                            <p>Revenue by category</p>
+                        </div>
+                    </div>
+
+                    <div class="donut-area">
+                        <div class="donut">
+                            <div>
+                                <b>₹8.4L</b>
+                                <small>Total sales</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="legend">
+                        <p><i class="dot purple"></i> Products
+                            <b>45%</b></p>
+                        <p><i class="dot blue"></i> Services
+                            <b>30%</b></p>
+                        <p><i class="dot yellow"></i> Subscriptions
+                            <b>25%</b></p>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="bottom-grid">
+
+                <div class="panel table-panel" id="customers">
+                    <div class="panel-heading">
+                        <div>
+                            <h3>Recent Transactions</h3>
+                            <p>Latest sales and payments</p>
+                        </div>
+                        <a href="#activity">View all →</a>
+                    </div>
+
+                    <div class="table-wrap">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Customer</th>
+                                    <th>Product</th>
+                                    <th>Date</th>
+                                    <th>Amount</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Arjun Kumar</td>
+                                    <td>Premium Plan</td>
+                                    <td>26 Oct</td>
+                                    <td>₹4,500</td>
+                                    <td><span class="paid">Paid</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Priya Sharma</td>
+                                    <td>Web Services</td>
+                                    <td>25 Oct</td>
+                                    <td>₹8,200</td>
+                                    <td><span class="paid">Paid</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Rahul Reddy</td>
+                                    <td>Basic Plan</td>
+                                    <td>25 Oct</td>
+                                    <td>₹1,500</td>
+                                    <td><span class="pending">Pending</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Sneha Patel</td>
+                                    <td>Products</td>
+                                    <td>24 Oct</td>
+                                    <td>₹3,800</td>
+                                    <td><span class="paid">Paid</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="panel activity-panel" id="activity">
+                    <div class="panel-heading">
+                        <div>
+                            <h3>Recent Activity</h3>
+                            <p>Latest updates</p>
+                        </div>
+                    </div>
+
+                    <div class="activity">
+                        <div class="activity-icon violet">↗</div>
+                        <div>
+                            <b>Revenue increased</b>
+                            <p>Monthly revenue grew by 12.8%.</p>
+                            <small>10 minutes ago</small>
+                        </div>
+                    </div>
+
+                    <div class="activity">
+                        <div class="activity-icon green">+</div>
+                        <div>
+                            <b>New customer joined</b>
+                            <p>A new user registered today.</p>
+                            <small>35 minutes ago</small>
+                        </div>
+                    </div>
+
+                    <div class="activity">
+                        <div class="activity-icon orange">✓</div>
+                        <div>
+                            <b>Payment received</b>
+                            <p>Order payment was completed.</p>
+                            <small>1 hour ago</small>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <footer>
+                Pulse Analytics · Sample dashboard for demonstration
+            </footer>
+
+        </main>
+    </div>
+
+</body>
+</html>
